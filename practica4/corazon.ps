@@ -1,0 +1,128 @@
+%!PS
+
+%% pagina apaisada
+<< /PageSize [842 595] >> setpagedevice
+
+
+%% superficie circulo izquierda
+newpath
+0.1 setlinewidth
+1 setgray
+% x   y    R  angI angF
+ 200 300  50   0   360   arc
+closepath
+stroke
+
+
+%% relleno rojo circulo izquierda
+newpath
+1 0 0 setrgbcolor
+% x   y    R  angI angF
+200  300  50   0   360   arc
+closepath
+fill
+stroke
+
+
+%% superficie circulo derecha
+newpath
+0.1 setlinewidth
+1 setgray
+% x   y    R  angI angF
+ 300 300  50   0   360   arc
+closepath
+stroke
+
+
+%% relleno rojo circulo derecha
+newpath
+1 0 0 setrgbcolor
+% x   y    R  angI angF
+300  300  50   0   360   arc
+closepath
+fill
+stroke
+
+
+%% superficie otra figura
+newpath
+0.1 setlinewidth
+1 setgray
+250 300 moveto
+90  -125 rlineto
+90   125 rlineto
+stroke
+
+
+%% relleno rojo otra figura
+newpath
+1 0 0 setrgbcolor
+250 300 moveto
+-90 -30 rlineto
+90  -125 rlineto
+90   125 rlineto
+closepath
+fill
+stroke
+
+
+
+%% mensajes
+
+/Times-Roman findfont
+25 scalefont
+setfont
+newpath
+0.7 setgray
+380 200 moveto
+
+gsave
+(La belleza no es nada, no permanece.) show
+grestore
+
+stroke
+
+
+/Times-Roman findfont
+25 scalefont
+setfont
+newpath
+0.5 setgray
+380 160 moveto
+
+gsave
+(No sabes la suerte que tienes sin belleza.) show
+grestore
+
+stroke
+
+
+/Times-Roman findfont
+25 scalefont
+setfont
+newpath
+0.2 setgray
+380 120 moveto
+
+gsave
+(Porque si le gustas a alguien,) show
+grestore
+
+stroke
+
+
+/Times-Roman findfont
+25 scalefont
+setfont
+newpath
+0 setgray
+380 80 moveto
+
+gsave
+(sabes que es por otra cosa.) show
+grestore
+
+stroke
+
+
+showpage
