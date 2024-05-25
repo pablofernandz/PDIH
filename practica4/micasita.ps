@@ -1,0 +1,121 @@
+%!
+
+%% superficie azul base
+newpath			
+
+0.4 0.6 1 setrgbcolor
+125 150 moveto
+360  0 rlineto
+0 360 rlineto
+-360  0 rlineto
+
+closepath
+
+2 setlinewidth
+
+stroke
+
+%% relleno gris base
+newpath			
+
+0.8 setgray
+125 150 moveto
+360  0 rlineto
+0 360 rlineto
+-360  0 rlineto
+
+closepath
+
+fill
+
+stroke
+
+
+%% superficie azul triangulo
+newpath			
+
+0.4 0.6 1 setrgbcolor
+50 510 moveto
+510  0 rlineto
+-255 280 rlineto
+
+closepath
+
+2 setlinewidth
+
+stroke
+
+
+%% relleno gris triangulo
+newpath			
+
+0.8 setgray
+50 510 moveto
+510  0 rlineto
+-255 280 rlineto
+
+closepath
+
+fill
+
+stroke
+
+
+%% puerta
+newpath			
+
+0.4 0.6 1 setrgbcolor
+260 150 moveto
+0  175 rlineto
+90  0 rlineto
+0  -175 rlineto
+
+closepath
+
+2 setlinewidth
+
+stroke
+
+
+%% ventana
+newpath			
+
+170 400 moveto
+0  75 rlineto
+75  0 rlineto
+0  -75 rlineto
+
+closepath
+
+2 setlinewidth
+
+stroke
+
+
+%% ventana
+newpath			
+
+365 400 moveto
+0  75 rlineto
+75  0 rlineto
+0  -75 rlineto
+
+closepath
+
+2 setlinewidth
+
+stroke
+
+
+/Times-Roman findfont
+30 scalefont
+setfont
+newpath
+0 setgray
+100 300 moveto
+90 rotate
+(mi casita) show
+
+stroke
+
+showpage
