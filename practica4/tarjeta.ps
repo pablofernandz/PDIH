@@ -1,0 +1,127 @@
+%!PS
+
+%% pagina apaisada
+<< /PageSize [842 595] >> setpagedevice
+
+
+%% recuadro exterior
+newpath
+0.1 setlinewidth
+0.9 setgray
+
+10 10 moveto
+822  0 rlineto
+0  575 rlineto
+-822  0 rlineto
+
+closepath
+stroke
+
+%% relleno azul recuadro
+newpath
+0.9 0.95 1 setrgbcolor
+
+10 10 moveto
+822  0 rlineto
+0  575 rlineto
+-822  0 rlineto
+
+closepath
+
+fill
+
+stroke
+
+
+%% superficie circulo
+newpath
+2 setlinewidth
+0 setgray
+% x   y    R  angI angF
+ 200 300  110   0   360   arc
+closepath
+stroke
+
+
+%% relleno gris circulo
+newpath
+0.8 setgray
+% x   y    R  angI angF
+200  300  110   0   360   arc
+closepath
+fill
+stroke
+
+
+%% mensajes
+
+/Times-Roman findfont
+30 scalefont
+setfont
+0 setgray
+newpath
+500 370 moveto
+
+gsave
+(PDIH) show
+grestore
+
+stroke
+
+/Times-Roman findfont
+30 scalefont
+setfont
+newpath
+0.5 setgray
+500 290 moveto
+
+gsave
+(Pablo Fernandez) show
+grestore
+
+stroke
+
+
+/Times-Roman findfont
+30 scalefont
+setfont
+newpath
+0.5 setgray
+500 250 moveto
+
+gsave
+(Ingenieria informatica) show
+grestore
+
+stroke
+
+
+/Times-Roman findfont
+30 scalefont
+setfont
+newpath
+0.5 setgray
+500 210 moveto
+
+gsave
+(pablofernandz@ugr.es) show
+grestore
+
+stroke
+
+
+/Times-Roman findfont
+30 scalefont
+setfont
+newpath
+0.5 setgray
+500 170 moveto
+
+gsave
+(UGR) show
+grestore
+
+stroke
+
+showpage
+
